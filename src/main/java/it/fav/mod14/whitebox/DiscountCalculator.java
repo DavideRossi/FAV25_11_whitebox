@@ -3,13 +3,13 @@ package it.fav.mod14.whitebox;
 import java.time.DayOfWeek;
 
 public class DiscountCalculator {
-	private DayOfWeek discountDow;
-	private double dowDiscount;
-	private int discountAge;
-	private double ageDiscount;
-	private double discountAmount;
-	private double amountDiscount;
-	
+	private final DayOfWeek discountDow;
+	private final double dowDiscount;
+	private final int discountAge;
+	private final double ageDiscount;
+	private final double discountAmount;
+	private final double amountDiscount;
+
 	public DiscountCalculator(DayOfWeek discountDow, double dowDiscount, int discountAge, double ageDiscount, double discountAmount, double amountDiscount) {
 		this.discountDow = discountDow;
 		this.dowDiscount = dowDiscount;
